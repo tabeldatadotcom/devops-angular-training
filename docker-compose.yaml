@@ -1,0 +1,9 @@
+version: '3.9'
+services:
+  webapp:
+    image: dimmaryanto93/angular-apps:v1
+    build:
+      dockerfile: Dockerfile
+      context: .
+    ports: 
+      - "81:80"
